@@ -1,5 +1,25 @@
 import React, { Component } from "react";
-export default class MyComp extends Component {
+
+export default class button extends Component {
+    showAlert(msg){
+        alert(msg)
+    }
+
+    onclickButtonOK = () => {
+        this.showAlert('Hello')
+    }
+
+    render() {
+        return(
+            <div style={{textAlign: 'center', marginTop: 20}}>
+              <button onClick={this.onclickButtonOK}>OK</button>
+            </div>
+        )
+    }
+}
+
+
+/*export default class MyComp extends Component {
     getDate(){
         const dayNames =['Sunday','Monday','tuesday','Wednesday','Thursday','Friday','Saturday']
         const monthNames =['January','February','March','April','May','June','July','August','September','October','November','December']
@@ -14,3 +34,4 @@ export default class MyComp extends Component {
         return<div>{this.getDate()}</div>
     }
 }
+*/

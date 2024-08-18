@@ -1,9 +1,24 @@
 import React from 'react'
-import './style.css'
-import { Header,Content,Footer } from './func-components'
-import Calendar from './class-components'
+import Button  from './class-components'
+import { Calculator2 } from './calculator'
+import { EventData2 } from './event-data'
+
+export default function App() {
+  return(
+    <>
+      <h2><center>react-class-comp-arrow-function</center></h2>
+      <Button/>
+      <h2><center>react-calculator</center></h2>
+      <Calculator2/>
+      <h2><center>react_event-data</center></h2>
+      <EventData2/>
+    </>
+  )
+}
 
 
+
+/*
 function App(){
   return(
     <>
@@ -16,3 +31,4 @@ function App(){
   
 }
 export default App;
+*/
